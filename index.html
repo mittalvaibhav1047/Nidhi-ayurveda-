@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi Ayurveda Panchkarma Therapy Centre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ayurveda': '#2d6a4f',
+                        'ayurveda-light': '#40916c',
+                        'gold': '#d4a574',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-outfit bg-black text-white overflow-x-hidden">
+
+    <!-- Floating Background with Logo Light -->
+    <div class="fixed-3d-container">
+        <div class="background-logo-container">
+            <img src="https://via.placeholder.com/600x600/2d6a4f/40916c?text=N" alt="Logo BG" class="bg-logo-light">
+        </div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="3d-logo-container">
+                <img src="https://via.placeholder.com/80x80/2d6a4f/ffffff?text=N" alt="Logo" class="logo-3d">
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#appointment" class="nav-link">Appointment</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <div class="badge-3d">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    Ayurvedic Healthcare
+                </div>
+                <h1 class="hero-title">
+                    Nidhi Ayurveda <br>
+                    <span class="gradient-text">Panchkarma Therapy</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience the ancient healing wisdom of Ayurveda. 
+                    Traditional Panchkarma treatments for modern wellness.
+                    Located in Mangal Pandey Nagar, Meerut.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn-primary-3d">
+                        <span>Book Consultation</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn-secondary-3d">
+                        <span>Our Treatments</span>
+                    </a>
+                </div>
+                <!-- Stats -->
+                <div class="stats-3d">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="3000">0</h3>
+                        <p>Happy Patients</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="10">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="5">0</h3>
+                        <p>Expert Therapists</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right 3D Image -->
+            <div class="hero-image-container">
+                <div class="3d-card-wrapper">
+                    <div class="3d-card">
+                        <!-- Replace with your centre photo -->
+                        <img src="https://via.placeholder.com/600x700/1a1a2e/2d6a4f?text=Your+Centre+Photo" 
+                             alt="Nidhi Ayurveda" class="hero-3d-image">
+                        <div class="3d-glow"></div>
+                        <div class="floating-elements">
+                            <div class="float-badge fb-1">
+                                <i class="fas fa-spa"></i>
+                                <span>Ayurveda</span>
+                            </div>
+                            <div class="float-badge fb-2">
+                                <i class="fas fa-heart"></i>
+                                <span>Care</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Our Treatments</h2>
+                <p class="section-subtitle">Traditional Ayurvedic therapies</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h3>Panchkarma</h3>
+                    <p>Complete detoxification and rejuvenation therapy</p>
+                </div>
+                <div class="service-card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Herbal Treatment</h3>
+                    <p>Natural medicines andherbal therapies</p>
+                </div>
+                <div class="service-card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-massage"></i>
+                    </div>
+                    <h3>Abhyanga</h3>
+                    <p>Therapeutic oil massage treatments</p>
+                </div>
+                <div class="service-card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Swedana</h3>
+                    <p>Herbal steam therapy</p>
+                </div>
+                <div class="service-card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-prescription-bottle"></i>
+                    </div>
+                    <h3>Nasya</h3>
+                    <p>Nasal purification treatment</p>
+                </div>
+                <div class="service-card-3d">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>Expert Ayurvedic consultation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section id="appointment" class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="appointment-card-3d">
+                <div class="appointment-header">
+                    <h2 class="section-title">Book Appointment</h2>
+                    <p class="section-subtitle">Schedule your visit today</p>
+                </div>
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-grid">
+                        <div class="input-group-3d">
+                            <label><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-group-3d">
+                            <label><i class="fas fa-calendar-age"></i> Age</label>
+                            <input type="number" id="age" placeholder="Enter your age" required>
+                        </div>
+                        <div class="input-group-3d">
+                            <label><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter phone number" required>
+                        </div>
+                        <div class="input-group-3d">
+                            <label><i class="fas fa-calendar"></i> Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                    </div>
+                    <div class="input-group-3d full-width">
+                        <label><i class="fas fa-clock"></i> Time Slot</label>
+                        <select id="timeSlot" required>
+                            <option value="">Select Time Slot</option>
+                            <option value="09:00">09:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="14:00">02:00 PM</option>
+                            <option value="15:00">03:00 PM</option>
+                            <option value="16:00">04:00 PM</option>
+                            <option value="17:00">05:00 PM</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn-3d">
+                        <span>Book Now</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Patient Gallery</h2>
+                <p class="section-subtitle">Moments of healing and care</p>
+            </div>
+            <div class="gallery-grid-3d">
+                <!-- Replace with your patient photos -->
+                <div class="gallery-item-3d">
+                    <img src="https://via.placeholder.com/400x300/1a1a2e/2d6a4f?text=Treatment+1" alt="Treatment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-3d">
+                    <img src="https://via.placeholder.com/400x300/1a1a2e/2d6a4f?text=Treatment+2" alt="Treatment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-3d">
+                    <img src="https://via.placeholder.com/400x300/1a1a2e/2d6a4f?text=Treatment+3" alt="Treatment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-3d">
+                    <img src="https://via.placeholder.com/400x300/1a1a2e/2d6a4f?text=Treatment+4" alt="Treatment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-3d">
+                    <img src="https://via.placeholder.com/400x300/1a1a2e/2d6a4f?text=Treatment+5" alt="Treatment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-3d">
+                    <img src="https://via.placeholder.com/400x300/1a1a2e/2d6a4f?text=Treatment+6" alt="Treatment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle mb-8">We're here to help</p>
+            <div class="contact-info-3d">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9876543210</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@nidhiayurveda.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Mangal Pandey Nagar, Meerut</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-gray-800">
+        <p>&copy; 2024 Nidhi Ayurveda Panchkarma Therapy Centre. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- ==================== FIREBASE BACKEND INTEGRATION ==================== -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        // ⚠️ APNE FIREBASE CREDENTIALS KI VALUE COPIED NOTEPAD SE NIKAL KAR NICHE PASTE KAREIN
+        const firebaseConfig = {
+            apiKey: "AIzaSyCuZcoErGzn2LYEZaK7te4Ef3uwpaT8Fz8",
+            authDomain: "nidhi-ayurveda.firebaseapp.com",
+            projectId: "nidhi-ayurveda",
+            storageBucket: "nidhi-ayurveda.firebasestorage.app",
+            messagingSenderId: "571598421468",
+            appId: "1:571598421468:web:d172aa8aea3acd81eae319"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        document.getElementById('appointmentForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const timeSlot = document.getElementById('timeSlot').value;
+
+            try {
+                await addDoc(collection(db, "appointments"), {
+                    name: name,
+                    age: parseInt(age),
+                    phone: phone,
+                    date: date,
+                    timeSlot: timeSlot,
+                    timestamp: new Date()
+                });
+
+                alert("🎉 Appointment Booked Successfully!");
+                document.getElementById('appointmentForm').reset();
+            } catch (error) {
+                console.error("Error saving appointment: ", error);
+                alert("❌ Booking Failed! Something went wrong.");
+            }
+        });
+    </script>
+</body>
+  </html>
